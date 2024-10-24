@@ -1,0 +1,120 @@
+.superContainer {
+  position: relative;
+
+  .refContainer {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+  }
+
+  .otherContainer {
+    width: 90%;
+    height: 100%;
+    background-color: #eaeaea;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 32px;
+
+    .topTextContainer {
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: #9333ea;
+      font-size: 3.75rem /* 60px */;
+      line-height: 1;
+      font-weight: 600;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .shapeImageContainer {
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 0px;
+
+      .shape {
+        width: 450px;
+        aspect-ratio: 1/1;
+        background-color: #6366f1;
+        --tw-blur: blur(40px);
+        filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+          var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+          var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+        position: absolute;
+        bottom: 10vh;
+        border-radius: 100%;
+      }
+
+      .handContainer {
+        position: absolute;
+        z-index: 30;
+        height: 100vh;
+        width: 100%;
+        /* background-color: red; */
+
+        .image {
+          object-fit: contain;
+        }
+      }
+    }
+
+    .textContainer {
+      height: 100vh;
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      letter-spacing: -0.05em;
+
+      .text5 {
+        font-size: 11em;
+        color: rgb(242 133 133 / 0.5);
+        font-weight: 700;
+      }
+    }
+
+    .middleTextContainer {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding-left: 1.25rem /* 20px */;
+      padding-right: 1.25rem /* 20px */;
+
+      .inTheText {
+        font-size: 11em;
+        font-weight: 700;
+        color: #86a69d;
+      }
+    }
+
+    .endContainer {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 1.25rem /* 20px */;
+      padding-right: 1.25rem /* 20px */;
+
+      .scrollText {
+        color: rgb(242 133 133 / 0.6);
+        font-size: 11em;
+        font-weight: 700;
+      }
+    }
+  }
+}

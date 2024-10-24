@@ -1,0 +1,166 @@
+.main {
+  /* background-color: white; */
+  background-color: #F4F4ED;
+
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.line {
+  width: 1px;
+  height: 100px;
+  background-color: black;
+}
+
+.textContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 4em;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .parragraphContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 5px; */
+  }
+
+  .parragraphContainer:nth-child(2) {
+    width: 75%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+  }
+}
+
+.firstP {
+  color: black;
+}
+
+.textContainer h1 {
+  font-size: 4em;
+  color: black;
+  font-weight: 600;
+}
+
+.leftLineContainer {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.rightLineContainer {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.horizontalLine {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.verticalLine {
+  width: 0.7px;
+  height: 10px;
+  background-color: black;
+}
+
+.container {
+  width: 40%;
+  height: 50%;
+  margin: 0 1em 0 1em;
+  /* background-color: red; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .textContainer {
+    width: auto;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    position: absolute;
+
+    .p1 {
+      font-size: 2.2em;
+      text-align: center;
+      width: 500px;
+      font-weight: 500;
+      line-height: 40px;
+      /* white-space: nowrap; */
+      overflow: hidden;
+      position: absolute;
+      white-space: normal;
+    }
+
+    .p2 {
+        font-size: 2.2em;
+        text-align: center;
+        width: 400px;
+        font-weight: 500;
+        line-height: 40px;
+        opacity: 0;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        position: absolute;
+        white-space: normal;
+      }
+  }
+
+  .topLeft {
+    width: 10px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+  }
+
+  .topRight {
+    width: 10px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  .bottomRight {
+    width: 10px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+  }
+  .bottomLeft {
+    width: 10px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+  }
+}
+/*  */
