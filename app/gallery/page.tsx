@@ -15,29 +15,29 @@ import Septh from "./components/septh";
 gsap.registerPlugin(ScrollTrigger);
 
 const Page = () => {
-  // useEffect(() => {
-  //   // Initialize Lenis
-  //   const lenis = new Lenis();
+  useEffect(() => {
+    // Initialize Lenis
+    const lenis = new Lenis();
 
-  //   // // Use requestAnimationFrame to continuously update the scroll
-  //   // function raf(time: number) {
-  //   //   lenis.raf(time);
-  //   //   requestAnimationFrame(raf);
-  //   // }
+    // // Use requestAnimationFrame to continuously update the scroll
+    // function raf(time: number) {
+    //   lenis.raf(time);
+    //   requestAnimationFrame(raf);
+    // }
 
-  //   // requestAnimationFrame(raf);
+    // requestAnimationFrame(raf);
 
-  //   lenis.on("scroll", ScrollTrigger.update);
+    lenis.on("scroll", ScrollTrigger.update);
 
-  //   // Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
-  //   // This ensures Lenis's smooth scroll animation updates on each GSAP tick
-  //   gsap.ticker.add((time) => {
-  //     lenis.raf(time * 1000); // Convert time from seconds to milliseconds
-  //   });
+    // Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
+    // This ensures Lenis's smooth scroll animation updates on each GSAP tick
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+    });
 
-  //   // Disable lag smoothing in GSAP to prevent any delay in scroll animations
-  //   gsap.ticker.lagSmoothing(0);
-  // }, []);
+    // Disable lag smoothing in GSAP to prevent any delay in scroll animations
+    gsap.ticker.lagSmoothing(0);
+  }, []);
 
 
 
